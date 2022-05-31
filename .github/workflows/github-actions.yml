@@ -19,4 +19,4 @@ jobs:
           sudo apt-get -qq update -y
           sudo apt-get -qq install -y git
           git submodule init && git submodule update
-          ./test/bats/bin/bats test/*.bats
+          ./test/bats/bin/bats --verbose-run test/*.bats
